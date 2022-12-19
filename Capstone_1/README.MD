@@ -42,13 +42,18 @@ If you want change service and build container:
 For cloud i used Virtual Private Server (VPS) on Ubuntu 22
 1. Install [docker](https://www.docker.com/) on VPS
 2. Pull IMAGE docker`docker pull chewye/zoom_camp:latest`
+
 ![pull image in cloud](/Capstone_1/img/Pull.png)
 3. Show  pull image in cloud
+
 ![show image in cloud](/Capstone_1/img/show.png)
 4. Run image `docker run -it --rm -p 9696:9696 chewye/zoom_camp`
+
 ![run image in cloud](/Capstone_1/img/run.png)
 5. Change request script `request_localhost.py` on your local machine, need change url on IP your VPS (my VPS 79.133.181.183)
+
 ![change script](/Capstone_1/img/change_script.png)
 6. Run request script on local machine and receive predict `python request_localhost.py`
+
 ![result](/Capstone_1/img/result.png)
 
