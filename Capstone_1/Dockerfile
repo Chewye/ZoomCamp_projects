@@ -13,4 +13,4 @@ COPY ["server_flask.py", "model.bin", "thr.bin", "./"]
 
 EXPOSE 9696
 
-ENTRYPOINT [ "gunicorn", "--bind=0.0.0.0:9696", "serv:app"]
+ENTRYPOINT [ "gunicorn", "--bind=0.0.0.0:9696", "server_flask:app"]
