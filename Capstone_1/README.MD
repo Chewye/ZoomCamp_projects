@@ -19,9 +19,10 @@ We chose CatBoost is a high-performance open source library for gradient boostin
 4. thr.bin - pickled best threshold for model.
 5. server-flask.py - script for create web service on Flask.
 6. request_localhost.py - script for request on web service predict in localhost.
-7. Pipfile and Pipfile.lock - dependencies python virtual environment (pipenv).
-8. Dockerfile - file fo build docker images with our predict service.
-9. [Containerized application](https://hub.docker.com/r/chewye/zoom_camp/tags)
+7. request_cloud.py - script for request on web service predict in cloud.
+8. Pipfile and Pipfile.lock - dependencies python virtual environment (pipenv).
+9. Dockerfile - file fo build docker images with our predict service.
+10. [Containerized application](https://hub.docker.com/r/chewye/zoom_camp/tags)
 
 ## Run containerized application:
 1. Install [docker](https://www.docker.com/)
@@ -55,7 +56,7 @@ For cloud i used Virtual Private Server (VPS) on Ubuntu 22
 
 ![run image in cloud](/Capstone_1/img/run.png)
 
-5. Change request script `request_localhost.py` on your local machine, need change url on IP your VPS (my VPS 79.133.181.183)
+5. Change request script `request_cloud.py` on your local machine, need change `url` IP your VPS (my VPS 79.133.181.183), you can test the service, run the script without changes on my cloud.
 
 ![change script](/Capstone_1/img/change_script.png)
 
